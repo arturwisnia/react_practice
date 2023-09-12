@@ -7,11 +7,13 @@ module.exports = {
       peerDependencies: false,
     }],
     'react/prop-types': 0,
-    'max-len': 0,
+    'max-len': ['error', {
+      ignoreTemplateLiterals: true,
+      ignoreComments: true,
+    }],
     'jsx-a11y/label-has-associated-control': ['error', {
       assert: 'either',
     }],
     'jsx-a11y/control-has-associated-label': 'off',
-    'jsx-a11y/accessible-emoji': 'off',
   },
 };
